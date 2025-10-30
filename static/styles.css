@@ -1,0 +1,196 @@
+.copy-btn {
+    background: #e0c3fc;
+    border: none;
+    border-radius: 6px;
+    padding: 3px 8px;
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(140, 100, 255, 0.07);
+}
+.copy-btn:hover {
+    background: #8ec5fc;
+}
+.download-btn {
+    background: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
+    color: #333333;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(140, 100, 255, 0.09);
+    transition: background 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.download-btn:hover {
+    background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+    box-shadow: 0 4px 16px rgba(140, 100, 255, 0.13);
+}
+#image-preview-container {
+    margin-bottom: 18px;
+}
+#image-preview {
+    max-width: 90%;
+    max-height: 220px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(140,100,255,0.09);
+}
+
+.palette-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.palette-labels {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 6px;
+}
+.palette-label {
+    font-size: 1em;
+    color: #555;
+    background: #f3f3fa;
+    padding: 3px 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(140, 100, 255, 0.07);
+}
+.gradient-label {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.98em;
+    color: #666;
+}
+.icon {
+    font-size: 1.2em;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* Fade-in animation for results */
+.fade-in {
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    text-align: center;
+    padding: 40px 0 10px 0;
+    background: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.main-header .logo {
+    font-size: 2.2em;
+    vertical-align: middle;
+}
+.main-header .subtitle {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 8px;
+}
+.container.card {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 32px 28px 28px 28px;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(140, 100, 255, 0.12);
+    transition: box-shadow 0.3s;
+}
+.container.card:hover {
+    box-shadow: 0 12px 32px rgba(140, 100, 255, 0.18);
+}
+form#upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+.file-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f3f3fa;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    box-shadow: 0 1px 4px rgba(140, 100, 255, 0.07);
+    transition: background 0.2s;
+}
+.file-label:hover {
+    background: #e0c3fc;
+}
+.file-label input[type="file"] {
+    display: none;
+}
+.upload-btn {
+    background: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
+    color: #333;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(140, 100, 255, 0.09);
+    transition: background 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.upload-btn:hover {
+    background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+    box-shadow: 0 4px 16px rgba(140, 100, 255, 0.13);
+}
+#palette-result, #gradient-result, #css-result {
+    margin-top: 30px;
+    text-align: center;
+}
+.palette-color {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 7px 8px;
+    border-radius: 8px;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 8px rgba(140, 100, 255, 0.09);
+    transition: transform 0.2s, box-shadow 0.2s;
+    vertical-align: middle;
+}
+.palette-color:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 18px rgba(140, 100, 255, 0.18);
+}
+.gradient-box {
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(140, 100, 255, 0.09);
+}
+.css-code {
+    background: #f0f0f0;
+    padding: 14px;
+    border-radius: 8px;
+    font-family: 'Fira Mono', monospace;
+    font-size: 1em;
+    margin-top: 10px;
+    box-shadow: 0 1px 4px rgba(140, 100, 255, 0.07);
+}
